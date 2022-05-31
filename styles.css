@@ -20,6 +20,7 @@
   --color-primary-border: #f5efe8;
   --color-white: #fff;
   --color-black: #000;
+  --color-orange: #f78431;
 }
 
 .container {
@@ -30,6 +31,7 @@ body {
 }
 
 .main-header {
+  display: none;
   border-bottom: 1px solid var(--color-primary-border);
   border-right: 1px solid var(--color-primary-border);
 }
@@ -76,4 +78,100 @@ body {
 
 .navigation-bar a:hover {
   color: orangered;
+}
+
+/* Our services secton */
+article {
+  width: 50%;
+  margin: 0 auto;
+}
+.our-services-heading {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 40px;
+}
+
+.our-serices-horizontal-line {
+  width: 20%;
+  margin: 1% auto;
+  background-color: var(--color-orange);
+}
+.our-services-info {
+  text-align: center;
+  margin: 5% auto 5% auto;
+}
+
+/* our services card styling */
+.card-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  max-width: 90%;
+  justify-self: center;
+  padding: 15% 10%;
+  margin: 5% 0;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.card-heading {
+  text-transform: uppercase;
+  color: #5d6671;
+  margin: 15% 0 10% 0;
+}
+.card-icon {
+  font-size: 40px;
+}
+.branding-identity-icon {
+  color: #f79292;
+}
+.branding-consult-icon {
+  color: #91a5fd;
+}
+.web-development-icon {
+  color: #85b5c4;
+}
+.market-analysis-icon {
+  color: #7eefd3;
+}
+.card-data p {
+  color: #050505;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-heading {
+    font-size: 16px;
+  }
+
+  .our-services-info {
+    font-size: 13px;
+    color: #989898;
+  }
+
+  .card-data p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  article {
+    width: 90%;
+  }
+  .card-container {
+    display: block;
+  }
+  .card {
+    max-width: 80%;
+    margin: 5% auto;
+  }
 }
