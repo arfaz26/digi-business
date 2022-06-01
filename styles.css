@@ -79,22 +79,25 @@ body {
   color: orangered;
 }
 
-/* Our services secton */
-#our-services-section {
-  width: 50%;
-  margin: 0 auto;
-}
-.our-services-heading {
+/* all sections heading and hr */
+.section-heading {
   text-transform: capitalize;
   text-align: center;
   font-size: 40px;
 }
 
-.our-serices-horizontal-line {
+.section-horizontal-line {
   width: 20%;
   margin: 1% auto;
   background-color: var(--color-orange);
 }
+
+/* Our services secton */
+#our-services-section {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .our-services-info {
   text-align: center;
   margin: 5% auto 5% auto;
