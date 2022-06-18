@@ -359,6 +359,126 @@ body {
   box-shadow: 0 25px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
+#make-your-business-bright {
+  margin: 40px 80px;
+}
+.subsection-make-your-business-1 {
+  margin: 0 18%;
+}
+.subsection-make-your-business-2 {
+  display: flex;
+}
+.subsection-make-your-business-left {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 14% 0;
+}
+
+.mybb-subsection {
+  min-width: 34%;
+  height: 50%;
+  border-left: 5px solid #f78431;
+  padding: 0 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mybb-subsection-heading {
+  font-size: 34px;
+  font-weight: bolder;
+}
+.mybb-subsection-info {
+  width: 50%;
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--secondary-font-color);
+}
+.subsection-make-your-business-right {
+  flex: 1;
+}
+
+.mybb-image-background {
+  margin-top: 36%;
+  margin-left: 30%;
+  height: 73%;
+  width: 51%;
+  background-color: var(--color-orange);
+  position: relative;
+}
+.mybb-girl-img {
+  height: 100%;
+  width: 100%;
+}
+.mybb-img-bck {
+  height: 600px;
+  width: 450px;
+  z-index: 1;
+
+  position: absolute;
+  bottom: 49px;
+  left: -174px;
+}
+
+.mybb-card-1 {
+  position: absolute;
+  right: -123px;
+  bottom: 158px;
+
+  z-index: 2;
+}
+.mybb-card {
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 385px;
+  padding: 20px;
+  background-color: var(--color-white);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.mybb-card-info {
+  font-size: var(--secondary-font-size);
+  max-width: 70%;
+}
+.mybb-card-profile-name {
+  margin-right: 24%;
+  text-transform: capitalize;
+  color: var(--secondary-font-color);
+  font-size: 13px;
+  padding: 10px 0px;
+  letter-spacing: 1px;
+}
+.rating {
+  padding: 10px 12px;
+  font-size: 10px;
+  color: gold;
+}
+.mybb-card-2 {
+  position: absolute;
+  right: 279px;
+  bottom: -16px;
+  z-index: 2;
+}
+.mybb-card-profile-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
 /* media queries for common sections */
 @media only screen and (max-width: 768px) {
   .section-info {
