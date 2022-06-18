@@ -9,12 +9,12 @@
 
 /* global margin */
 .global-vertical-margin {
-  margin: 0 20px;
+  margin: 0 80px;
 }
 
 /* color variable declaration  */
 :root {
-  --color-primary-header: #595856;
+  --color-primary-header: #939393;
   --color-secondary-header: #434140;
 
   --color-primary-border: #f5efe8;
@@ -23,6 +23,9 @@
   --color-orange: #f78431;
 
   --secondary-font-color: #5d6671;
+  --tertiary-font-color: #9a9a99;
+
+  --secondary-font-size: 18px;
 }
 
 .container {
@@ -37,7 +40,7 @@ body {
   border-right: 1px solid var(--color-primary-border);
 }
 .navigation-bar {
-  padding: 30px 40px 40px 40px;
+  padding: 30px 0 40px 0;
   color: var(--color-primary-header);
 
   display: flex;
@@ -48,7 +51,7 @@ body {
 .logo {
   flex: 2;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   color: var(--color-secondary-header);
   font-size: 35px;
   font-weight: bolder;
@@ -56,7 +59,7 @@ body {
 
 .navigation-links-1 {
   flex: 2;
-  margin-right: 5rem;
+  margin-right: 8rem;
 }
 .navigation-links-2 {
   flex: 1;
@@ -64,10 +67,15 @@ body {
 
 .nav-links {
   display: flex;
-  align-self: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 20px;
   list-style: none;
+}
+
+.sign-up {
+  border-radius: 23px;
+  /* height: 50px; */
+  width: 100px;
 }
 
 /* styling hyperlinks */
@@ -80,7 +88,121 @@ body {
 .navigation-bar a:hover {
   color: orangered;
 }
+/* growing your business section */
+#growing-your-business {
+  display: flex;
+  margin: 80px 80px 0 80px;
+}
+.growing-your-business-left {
+  flex: 1;
+}
 
+.sub-heading-1,
+.sub-heading-2 {
+  text-transform: capitalize;
+  font-size: 90px;
+}
+.sub-heading-1 {
+  line-height: 50px;
+}
+.sub-heading-2 {
+  color: var(--color-orange);
+  font-weight: bolder;
+}
+.growing-your-business-info {
+  color: var(--secondary-font-color);
+  margin: 20px 0;
+  font-size: var(--secondary-font-size);
+  padding-right: 65px;
+}
+
+.btns-growing-your-business {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 400px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 10% auto;
+}
+.gyb-btn-div {
+  min-width: 200px;
+}
+
+.btn-gyb {
+  width: 160px;
+  height: 53px;
+  padding: 5% 5%;
+  margin-bottom: 10%;
+  text-transform: capitalize;
+  background-color: #fafafa;
+  border-color: #989898;
+  color: var(--tertiary-font-color);
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px groove;
+}
+.btn-gyb:hover {
+  background-color: var(--color-white);
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
+}
+.gyb-icon {
+  margin-right: 5px;
+  font-size: 17px;
+  text-align: center;
+}
+.growing-your-business-right {
+  flex: 1;
+  justify-content: center;
+  position: relative;
+}
+
+.gyb-img {
+  margin-left: 40px;
+  width: 75%;
+  height: 88%;
+}
+
+.gyb-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 340px;
+  padding: 15px;
+  background-color: var(--color-white);
+  line-height: 22px;
+
+  position: absolute;
+  right: 100px;
+  bottom: 20px;
+}
+.gyb-card-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.gyb-card-info {
+  font-size: var(--secondary-font-size);
+  margin-bottom: 10px;
+}
+.gyb-card-sub-info {
+  color: var(--secondary-font-color);
+  font-size: 13px;
+}
+
+.card-left {
+  flex: 1;
+  align-self: start;
+}
+.card-right {
+  flex: 2;
+}
 /* all sections heading and hr */
 .section-heading {
   text-transform: capitalize;
@@ -97,11 +219,13 @@ body {
 .section-info {
   text-align: center;
   margin: 5% auto 5% auto;
+  color: var(--secondary-font-color);
+  font-size: var(--secondary-font-size);
 }
 
 /* Our services secton */
 #our-services {
-  margin: 0 20%;
+  margin: 0 17%;
 }
 
 /* our services card styling */
@@ -126,6 +250,7 @@ body {
 .card:hover {
   box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .card-heading {
@@ -149,7 +274,8 @@ body {
   color: #7eefd3;
 }
 .card-data p {
-  color: #050505;
+  color: var(--secondary-font-color);
+  font-size: var(--secondary-font-size);
 }
 
 /* section how-it-works */
@@ -157,7 +283,7 @@ body {
   margin: 40px 80px;
 }
 .subsection-how-it-works-1 {
-  margin: 0 18%;
+  margin: 0 13%;
 }
 .subsection-how-it-works-2 {
   display: flex;
@@ -184,7 +310,7 @@ body {
 }
 .icon-label {
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: bold;
   color: var(--secondary-font-color);
   margin: 5% auto;
@@ -201,16 +327,17 @@ body {
 
 .how-it-works-right {
   flex: 3;
-  padding: 5rem 19rem 0 5rem;
+  padding: 5rem 10rem 0 5rem;
   align-self: flex-start;
 }
 .heading-how-to-create-account {
-  font-size: 20px;
+  font-size: 27px;
   margin-bottom: 3rem;
 }
 .info-how-to-create-account {
-  color: var(--secondary-font-color);
+  color: var(--tertiary-font-color);
   line-height: 24px;
+  font-size: var(--secondary-font-size);
 }
 .buttons-how-it-works {
   margin-top: 5rem;
@@ -219,10 +346,11 @@ body {
   width: 34%;
   padding: 3% 5%;
   border-radius: 26px;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
   margin-right: 5%;
+  cursor: pointer;
 }
 
 .btn-htc:hover {
