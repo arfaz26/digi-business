@@ -499,15 +499,17 @@ body {
   height: 500px;
   width: 450px;
   border-radius: 10px;
-  background-repeat: no-repeat;
-  background-size: 450px 500px;
   border: 1px solid var(--color-white);
 }
 .wcs-card-1 {
-  background-image: url("images/wcs-card-1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/wcs-card-1.jpg") no-repeat;
+  background-size: 450px 500px;
 }
 .wcs-card-2 {
-  background-image: url("images/wcs-card-2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/wcs-card-2.jpg");
+  background-size: 450px 500px;
 }
 .wcs-card-img {
   height: 420px;
