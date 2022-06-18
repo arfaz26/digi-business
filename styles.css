@@ -538,6 +538,7 @@ body {
   text-decoration: underline;
   color: var(--secondary-font-color);
   font-weight: bold;
+  cursor: pointer;
 }
 .label-new {
   text-transform: uppercase;
