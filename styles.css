@@ -524,6 +524,81 @@ body {
   background-color: var(--color-white);
   color: var(--color-orange);
 }
+#what-customer-says {
+  margin-top: 150px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 40px;
+}
+
+.subsection-what-customer-says-1 {
+  margin: 0 18%;
+}
+.subsection-what-customer-says-2 {
+  margin: 0 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wcs-card {
+  height: 500px;
+  width: 450px;
+  border-radius: 10px;
+  border: 1px solid var(--color-white);
+}
+.wcs-card-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/wcs-card-1.jpg") no-repeat;
+  background-size: 450px 500px;
+}
+.wcs-card-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/wcs-card-2.jpg");
+  background-size: 450px 500px;
+}
+.wcs-card-img {
+  height: 420px;
+  width: 390px;
+  border-radius: 10px;
+}
+.sub-card {
+  background-color: var(--color-white);
+  margin: 53% 5% 0 5%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.wcs-info {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--secondary-font-color);
+}
+.wcs-sub-info {
+  font-size: 15px;
+  color: var(--tertiary-font-color);
+  margin-bottom: 20px;
+}
+.read-more {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--secondary-font-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+.label-new {
+  text-transform: uppercase;
+  background-color: var(--color-white);
+  width: 20%;
+  padding: 5% 0;
+  text-align: center;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  margin-left: 75%;
+  border: 1px solid var(--color-white);
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--secondary-font-color);
+}
 
 /* media queries for common sections */
 @media only screen and (max-width: 768px) {
